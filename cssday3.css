@@ -11,6 +11,10 @@ header {
     margin: 30px auto;
     max-width: 800px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: cadetblue;
+    z-index: 1;
 }
 
 h1 {
@@ -57,5 +61,37 @@ p {
 .container > div:hover {
     transform: scale(1.1);
     background-color: rgb(167, 47, 26);
-
 }
+
+h2 {
+    font-weight: 150px;
+    margin: 30px;
+    font:300px;
+    color: aliceblue;
+}
+
+  #overflowTest {
+    background: #b84e2e;
+    color: white;
+    padding: 15px;
+    width: 20%;
+    height: 300px;
+    overflow: scroll;
+    border: 1px solid rgb(180, 53, 53);
+    margin-left:280px;
+  }
+
+  
+  #overflowlow {
+    background: #b84e2e;
+    color: white;
+    padding: 15px;
+    width: 20%;
+    height: 300px;
+    overflow: scroll;
+    border: 1px solid rgb(180, 53, 53);
+    margin-left:800px;
+    margin-top: -23%;
+    
+  }
+  
