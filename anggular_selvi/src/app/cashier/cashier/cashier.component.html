@@ -1,0 +1,9 @@
+<p>cashier works!</p>
+<main>
+    <section>
+        <app-menu [cafeShop]="cafeShop" (cafeAdded)="addCafe($event)"></app-menu>
+    </section>
+    <aside>
+        <app-payment [(cafeShop)]="selectedCafeShop"></app-payment>
+    </aside>
+</main>
