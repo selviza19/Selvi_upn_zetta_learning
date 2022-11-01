@@ -3,20 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserDetailComponent } from './user/user-detail/user-detail.component';
-import { AddUserComponent } from './user/add-user/add-user.component';
-import { UserTableComponent } from './user/user-table/user-table.component';
+import { CashierModule } from './cashier/cashier.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UserTableComponent,
-    UserDetailComponent,
-    AddUserComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CashierModule
   ],
   providers: [],
   bootstrap: [AppComponent]
