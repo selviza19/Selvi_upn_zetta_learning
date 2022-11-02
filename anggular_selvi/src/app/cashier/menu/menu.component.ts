@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Cafe } from '../cashier/cashier.component';
+import { Component, OnInit } from '@angular/core';
+import { Item } from '../cashier/cashier.component';
 
 @Component({
   selector: 'app-menu',
@@ -7,16 +7,16 @@ import { Cafe } from '../cashier/cashier.component';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  @Input('cafeShop') cafeShop: Cafe[] = []
-  @Output('cafeAdded)') onAddCafe: EventEmitter<Cafe> = new EventEmitter<Cafe>();
+  @Input('items') items: Item[]=[]
+  @Output('itemAdded') onAddItem: EventEmitter<Item> = new EventEmitter<Item>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  addCafe(cafe: Cafe):void {
-    this.onAddCafe.emit(cafe)
+  addItem(item: Item): void {
+    this.onAddItem.emit(item)
   }
 
 
