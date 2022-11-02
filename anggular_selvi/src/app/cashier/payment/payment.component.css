@@ -1,9 +1,0 @@
-.payment{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-h2{
-    text-align: center;
-    color: #4FA095;
-}

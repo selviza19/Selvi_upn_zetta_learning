@@ -12,5 +12,6 @@ import { PaymentComponent } from './cashier/payment/payment.component';
   ],
   imports: [
   CommonModule
+  ]
 })
 export class AppModule { }

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { CashierRoutingModule } from './cashier-routing.module';
 import { CashierComponent } from './cashier/cashier.component';
 import { MenuComponent } from './menu/menu.component';
 import { PaymentComponent } from './payment/payment.component';
-
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PaymentComponent } from './payment/payment.component';
     PaymentComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CashierRoutingModule
   ]
 })
 export class CashierModule { }
