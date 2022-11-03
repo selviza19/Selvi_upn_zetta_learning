@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges,  } from '@angular/core';
 import { SelectedItem } from '../cashier/cashier.component';
 @Component({
   selector: 'app-payment',
@@ -6,8 +6,8 @@ import { SelectedItem } from '../cashier/cashier.component';
   styleUrls: ['./payment.component.css']
 })
 export class PaymentComponent implements OnInit {
-  // @Input() items: SelectedItem[]=[]
-  // @Output() itemsChange : EventEmitter<SelectedItem[]> = new EventEmitter <SelectedItem[]>()
+  @Input() items: SelectedItem[]=[]
+  @Output() itemsChange : EventEmitter<SelectedItem[]> = new EventEmitter <SelectedItem[]>()
 
   public total :number = 0;
   constructor() { }
@@ -15,7 +15,7 @@ export class PaymentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
+   ngOnChanges(changes: SimpleChanges): void {
     this.total = this.items.reduce((total, item) => total += item.amount * item.price , 0)
   }
 

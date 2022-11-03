@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Item } from '../cashier/cashier.component';
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
