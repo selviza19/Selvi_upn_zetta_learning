@@ -1,1 +1,9 @@
-<p>menu works!</p>
+<h2>Menu</h2>
+<div class="menu">
+    <div *ngFor = "let item of items" (click)="addItem(item)">
+    <div class="item">
+        <h3>{{ item.name }}</h3>
+        <p>Rp. {{ item.price }}</p>
+    </div>
+    </div>
+</div>

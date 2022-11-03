@@ -1,7 +1,9 @@
-.flex-container{
-    display: flex;
-    justify-content: space-evenly;
-    border: 2px rgb(60, 57, 57) solid;
-    margin: 2vh 2vh;
-    flex-wrap: wrap;
-  }
+*{
+  font-family: 'Josefin Sans',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color : #153462;
+}
