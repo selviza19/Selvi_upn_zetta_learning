@@ -1,18 +1,28 @@
-import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges,  } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges, ViewChild, ElementRef,  } from '@angular/core';
 import { SelectedItem } from '../cashier/cashier.component';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
-  styleUrls: ['./payment.component.css']
+  styleUrls: ['./payment.component.css'],
+  styles : ['[bgAqua]{  Background-color: pink;}',],
 })
+
+
 export class PaymentComponent implements OnInit {
+  @ViewChild('bgAqua') bgAqua?:ElementRef;
+
   @Input() items: SelectedItem[]=[]
   @Output() itemsChange : EventEmitter<SelectedItem[]> = new EventEmitter <SelectedItem[]>()
+
 
   public total :number = 0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit(): void {
+    this.bgAqua?.nativeElement.setAttribute('bgAqua', '');
   }
 
    ngOnChanges(changes: SimpleChanges): void {

@@ -9,16 +9,14 @@ export interface SelectedItem {id : string , name : string , price : number, amo
 })
 export class CashierComponent implements OnInit {
   public items: Item[]= [
-    {id:'1', name: 'Cafe Latte', price: 5000},
-    {id:'2', name: 'Vanilla Latte', price: 5000},
-    {id:'3', name: 'Caramel Macchiato', price: 5000},
-    {id:'4', name: 'Americano', price: 5000},
-    {id:'5', name: 'Affogato', price: 5000},
-    {id:'6', name: 'Matcha Latte', price: 5000},
-    {id:'7', name: 'Cappuccino', price: 5000},
-    {id:'8', name: 'Mochaccino', price: 5000},
-    {id:'9', name: 'Japanese Iced Coffee', price: 5000},
-    {id:'10', name: 'Vietnam Drip', price: 5000},
+    {id:'1', name: 'Es Teh', price: 5000},
+    {id:'2', name: 'Juice Straberry', price: 10000},
+    {id:'3', name: 'Milshake Straberry', price: 22000},
+    {id:'4', name: 'Coffee Torabika', price: 25000},
+    {id:'5', name: 'Ice Relvet', price: 16000},
+    {id:'6', name: 'Es Soda Gembira', price: 15000},
+    {id:'7', name: 'Coffe Jos', price: 6000},
+    {id:'8', name: 'Shisha Reguler', price: 54000},
   ]
   public selectedItems: SelectedItem[] = []
 
