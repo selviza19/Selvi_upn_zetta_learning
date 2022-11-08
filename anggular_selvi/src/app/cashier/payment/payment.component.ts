@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges, ViewChild, ElementRef,  } from '@angular/core';
+import { map } from 'rxjs/operators';
 import { SelectedItem } from '../cashier/cashier.component';
 @Component({
   selector: 'app-payment',
@@ -16,7 +17,8 @@ export class PaymentComponent implements OnInit {
 
 
   public total :number = 0;
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
   }

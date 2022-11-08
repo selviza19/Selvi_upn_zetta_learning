@@ -1,7 +1,9 @@
 <h2>Payment</h2>
+<table>
 <div #bgAqua class="payment">
     <div *ngFor = "let item of items">
         <p>{{ item.amount }} x {{item.name}} Rp. {{ item.price }}</p>
         <button click="removeItem(item)"> Remove </button>
     </div>
 </div>
+</table>
