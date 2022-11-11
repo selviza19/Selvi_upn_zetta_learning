@@ -1,0 +1,28 @@
+.card{
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+margin-top: 50px;
+height: auto;
+   border: 0.4px solid rgb(151, 150, 150);
+}
+button{
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+ul{
+    list-style-type:none;
+}
+h1{
+    font-size: 50px;
+    font-weight: semibold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 30px;
+    margin-top: 60px;
+}

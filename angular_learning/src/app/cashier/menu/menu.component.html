@@ -1,0 +1,10 @@
+<h1>Menu</h1>
+<ul>
+    <li *ngFor="let item of (items1 | async)  "  (click)="addItem(item)" >
+        <h3>{{ item.name}}</h3>
+        <p>
+            Rp. {{item.Harga}}
+        </p>
+
+    </li>
+</ul>

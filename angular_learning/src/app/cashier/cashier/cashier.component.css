@@ -1,0 +1,17 @@
+menu{
+    display: flex;
+}
+
+section{
+    width: 900px;
+}
+aside{
+    width: 500px;
+    height: 1000px;
+    
+    margin-left: 100px;
+}
+
+.btn #in{
+    background-color:greenyellow;
+}
