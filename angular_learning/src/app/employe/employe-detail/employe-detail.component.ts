@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { employeService } from '../employe.service';
-interface Employee {id : string  , name : string , position : string , availability : string ,action : string }
+interface employe {id : string  , name : string , position : string , availability : string ,action : string }
 
 @Component({
   selector: 'app-employe-detail',
@@ -11,7 +11,7 @@ interface Employee {id : string  , name : string , position : string , availabil
 })
 export class EmployeDetailComponent implements OnInit {
   private emplyoeeid : string|null =null
-  public employee : Employee|null = null
+  public employe : employe|null = null
 
   constructor(private route:ActivatedRoute , private employservice: employeService) {
     this.emplyoeeid = this.route.snapshot.paramMap.get('id')
@@ -20,9 +20,9 @@ export class EmployeDetailComponent implements OnInit {
 
   ngOnInit(): void {
     if(typeof this.emplyoeeid === 'string'){
-      this.employee = this.employservice.getEmployById(this.emplyoeeid)
+      this.employe = this.employservice.getEmployById(this.emplyoeeid)
     }
-    console.log(this.employee);
+    console.log(this.employe);
   }
 
 }
