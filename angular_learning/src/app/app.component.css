@@ -1,0 +1,7 @@
+.example-spacer{
+    flex: 1 1 auto;
+  }
+
+  body{
+background-color: rgb(238, 185, 225);
+  }
