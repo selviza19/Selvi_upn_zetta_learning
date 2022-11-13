@@ -47,7 +47,7 @@
   .sbm{
     width: 600px;
     margin-top: 20px;
-    background:  linear-gradient(45deg, blue,rgb(34, 255, 0));
+    background:  linear-gradient(45deg, rgb(136, 136, 241),rgb(221, 101, 101));
     color: white;
     font-weight: bold;
     font-size: 15px;
@@ -66,4 +66,19 @@
   .atas{
     margin-top: 20px;
   }
+
+  .add{
+    width: 500px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+   }
+  
+   .addrs{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+   }
   
