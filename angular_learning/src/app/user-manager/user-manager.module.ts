@@ -15,16 +15,20 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list'
+import { FormsModule } from '@angular/forms';
 
 import {ReactiveFormsModule} from '@angular/forms';
 import { DetailComponent } from './detail/detail.component'
+import { FilterPipe } from './list/filter.pipe';
+
 
 @NgModule({
   declarations: [
     CreateComponent,
     DetailComponent,
     EditComponent,
-    ListComponent
+    ListComponent,
+    FilterPipe
   ],
   imports: [
     CommonModule,
@@ -39,7 +43,8 @@ import { DetailComponent } from './detail/detail.component'
     MatToolbarModule,
     MatDividerModule,
     UpperCasePipe,
-    MatListModule
+    MatListModule,
+    FormsModule
   ]
 })
 export class UserManagerModule { }
