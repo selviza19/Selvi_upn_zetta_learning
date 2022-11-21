@@ -1,0 +1,37 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "berita satu",
+        "content": "kontent satu"
+      },
+      {
+        "id": 2,
+        "title": "berita dua",
+        "content": "kontent dua"
+      },
+      {
+        "id": 3,
+        "title": "Berita tiga",
+        "content": "isi kontent tiga"
+      },
+      {
+        "id": 4,
+        "title": "berita empat",
+        "content": "isi konten berita empat"
+      },
+      {
+        "id": 5,
+        "title": "Berita lima",
+        "content": "isi konten berita lima"
+      },
+      {
+        "id": 6,
+        "title": "Berita enam",
+        "content": "isi kontent berita enam"
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
